@@ -8,6 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="mx-36">
+
 <section class="bg-white mt-5 rounded-lg mb-5">
    <nav class="flex justify-between p-3">
     <div class="flex items-center gap-3">
@@ -17,10 +18,10 @@
     <div class="flex gap-9 items-center">
         <div class="flex gap-3 bg-[#ebeff9] p-2 rounded-full items-center">
              <img src="assets/checkbox.png" alt="" class="">
-            <h1 class="font-bold text-xl">23</h1>
+            <h1 id="done" class="font-bold text-xl">23</h1>
         </div>
-        <div>
-            <img src="assets/theme-btn.png" alt="">
+        <div class="bg-[#ebeff9] rounded-full p-1">
+            <img src="assets/theme-btn.png" alt="" class="">
         </div>
     </div>
    </nav>
@@ -39,7 +40,7 @@
             </div>
             <div>
                 <p class="text-xs font-semibold opacity-80">Task Assigned</p>
-                <h1 class="text-xl font-bold">05</h1>
+                <h1 id="task" class="text-xl font-bold">06</h1>
             </div>
     
         </div>
@@ -70,7 +71,7 @@
         <div class="w-2/5 bg-white p-2 rounded-lg">
             <p class="text-xs font-medium ">ShopEase</p>
         </div>
-        <p class="font-semibold">Fix Mobile Button Issue</p>
+        <p id="title" class="font-semibold">Fix Mobile Button Issue</p>
         <div class="bg-white p-2 rounded-lg">
             <p class="text-xs opacity-50 line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
@@ -82,7 +83,7 @@
                 <p class="font-semibold text-sm">Datehilhlhil</p>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-white">Completed</button>  
+              <button id="btn1" class="btn bg-[#3752FD] text-white">Completed</button>  
             </div>
         </div>
     </div>
@@ -90,7 +91,7 @@
         <div class="w-1/2 bg-white p-2 rounded-lg">
             <p class="text-xs font-medium ">CloudSync</p>
         </div>
-        <p class="font-semibold">Add Dark Mode</p>
+        <p id="t2" class="font-semibold">Add Dark Mode</p>
         <div class="bg-white p-2 rounded-lg">
             <p class="text-xs opacity-50 line-clamp-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
         </div>
@@ -101,7 +102,7 @@
                 <p class="font-semibold text-sm">Datehilhlhil</p>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-white">Completed</button>  
+              <button id="b2" class="btn bg-[#3752FD] text-white">Completed</button>  
             </div>
         </div>
     </div>
@@ -109,7 +110,7 @@
         <div class="w-1/3 bg-white p-2 rounded-lg">
             <p class="text-xs font-medium ">SwiftPay</p>
         </div>
-        <p class="font-semibold">Optimize Homepage</p>
+        <p id="t3" class="font-semibold">Optimize Homepage</p>
         <div class="bg-white p-2 rounded-lg">
             <p class="text-xs opacity-50 line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
@@ -121,7 +122,7 @@
                 <p class="font-semibold text-sm">Datehilhlhil</p>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-white">Completed</button>  
+              <button id="b3" class="btn bg-[#3752FD] text-white">Completed</button>  
             </div>
         </div>
     </div>
@@ -129,7 +130,7 @@
         <div class="w-1/4 bg-white p-2 rounded-lg">
             <p class="text-xs font-medium ">Meta</p>
         </div>
-        <p class="font-semibold">Add new emoji 🤲</p>
+        <p id="t4" class="font-semibold">Add new emoji 🤲</p>
         <div class="bg-white p-2 rounded-lg">
             <p class="text-xs opacity-50 line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
@@ -141,7 +142,7 @@
                 <p class="font-semibold text-sm">Datehilhlhil</p>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-white">Completed</button>  
+              <button id="b4" class="btn bg-[#3752FD] text-white">Completed</button>  
             </div>
         </div>
     </div>
@@ -149,7 +150,7 @@
         <div class="w-2/4 bg-white p-2 rounded-lg">
             <p class="text-xs font-medium ">Google LLC</p>
         </div>
-        <p class="font-semibold">Integrate OpenAI API</p>
+        <p id="t5" class="font-semibold">Integrate OpenAI API</p>
         <div class="bg-white p-2 rounded-lg">
             <p class="text-xs opacity-50 line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
@@ -161,7 +162,7 @@
                 <p class="font-semibold text-sm">Datehilhlhil</p>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-white">Completed</button>  
+              <button id="b5" class="btn bg-[#3752FD] text-white">Completed</button>  
             </div>
         </div>
     </div>
@@ -169,7 +170,7 @@
         <div class="w-1/2 bg-white p-2 rounded-lg">
             <p class="text-xs font-medium ">GlassDoor</p>
         </div>
-        <p class="font-semibold">Improve Job Searching</p>
+        <p id="t6" class="font-semibold">Improve Job Searching</p>
         <div class="bg-white p-2 rounded-lg">
             <p class="text-xs opacity-50 line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                 and ensure onClick works properly</p>
@@ -181,7 +182,7 @@
                 <p class="font-semibold text-sm">Datehilhlhil</p>
             </div>
             <div>
-              <button class="btn bg-[#3752FD] text-white">Completed</button>  
+              <button id="b6" class="btn bg-[#3752FD] text-white">Completed</button>  
             </div>
         </div>
     </div>
@@ -196,9 +197,22 @@
         <p>Activity Log</p>
      </div>
      <div class="flex justify-center">
-        <button class="btn bg-[#3752FD] text-white">Clear History</button>
+        <button id="hisbtn" class="btn bg-[#3752FD] text-white">Clear History</button>
+     </div>
+
+     <div id="container">
+    
      </div>
     </section>
 </section>
+<style>
+    .activity{
+        background-color: #ebeff9;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+        border-radius: 10px;
+    }
+</style>
+<script src="scripts/script.js"></script>
 </body>
 </html>
