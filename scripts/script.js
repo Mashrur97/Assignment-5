@@ -196,3 +196,8 @@ document.getElementById("theme")
   document.getElementById("cng").style.backgroundColor = color;
 
 })
+
+
+
+const s = new Date();
+document.getElementById("date").innerText = s.toDateString();
