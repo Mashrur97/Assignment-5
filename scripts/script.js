@@ -185,3 +185,14 @@ document.getElementById("discover")
 .addEventListener("click",function(){
   window.location.href="discover.html"
 })
+
+document.getElementById("theme")
+.addEventListener("click",function(){
+
+  let color = "#";
+  const a = Math.random().toString(16).slice(2,8);
+  color+=a;
+  
+  document.getElementById("cng").style.backgroundColor = color;
+
+})
